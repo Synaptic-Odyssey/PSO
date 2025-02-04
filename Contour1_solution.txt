@@ -1,0 +1,8 @@
+Note that is only one possible solution
+
+c1, c2, w = 2.0, 2.0, 0.9
+
+num_particles = 50
+np.random.seed(200)
+positions = np.random.rand(2, num_particles) * 8
+velocities = np.random.randn(2, num_particles) * 1.0

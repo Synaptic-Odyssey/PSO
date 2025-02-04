@@ -32,7 +32,7 @@ z_vals = objective_function(x_vals, y_vals)
 c1, c2, w = 0.1, 0.1, 0.8
 
 # Initialize positions and velocities
-num_particles = 20
+num_particles = 40
 np.random.seed(100)
 positions = np.random.rand(2, num_particles) * 10
 velocities = np.random.randn(2, num_particles) * 0.1
@@ -85,7 +85,7 @@ ax.set_ylim([0, 10])
 
 # Animation function to update the plot
 def animate(i):
-    title = f"Generation: {i+1}"
+    title = f"Step: {i+1}"
     update_particles()
 
     ax.set_title(title)
